@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Lease Management</h2>
+<p>Current Lease: {{ lease_period }}</p>
+<form method="POST" action="{{ url_for('lease') }}">
+    <button type="submit">Renew Lease</button>
+</form>
+{% endblock %}
